@@ -7,7 +7,8 @@ return(
             <div>
            <p> My name is {this.props.name}</p>
            <p> My id : {this.props.id}
-           <p>addr: {this.fun}</p>
+           <p>addr1: {this.props.fun1()}</p>
+           <p>addr2: {this}</p>
 
            </p> </div>
         );
