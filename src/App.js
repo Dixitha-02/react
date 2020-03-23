@@ -5,7 +5,7 @@ import First from './pages/class';
 import Fun from './pages/func';
 
 import Hello from './pages/hello';
-import './App.css';
+
 import Greet from './pages/expr';
 import Function from './pages/func';
 import Bliss from './pages/state';
@@ -14,8 +14,10 @@ import Pass from './pages/passing';
 import Map from './pages/map';
 import Event from './pages/event';
 import Life from './pages/lifecycle';
-import Error from './pages/error_handling';*/
-import ErrorBoundary from './pages/error';
+import Error from './pages/error_handling';
+import ErrorBoundary from './pages/error';*/
+import Vote from './pages/vote';
+import './App.css';
 
 /*class App extends React.Component {
 	render = () => <div id="but" >
@@ -101,10 +103,15 @@ function Fun(){
 
     <div>
       <Error/>
-    </div>*/
+    </div>
 
     <div>
       <ErrorBoundary/>
+    </div>*/
+
+    <div>
+      <Vote/>
+      
     </div>
   )
 }
