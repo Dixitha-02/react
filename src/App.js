@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-/*import click from './pages/expr';
+/*import Main from './components/main';
+import click from './pages/expr';
 
 import First from './pages/class';
 import Fun from './pages/func';
@@ -15,9 +16,17 @@ import Map from './pages/map';
 import Event from './pages/event';
 import Life from './pages/lifecycle';
 import Error from './pages/error_handling';
-import ErrorBoundary from './pages/error';*/
+import ErrorBoundary from './pages/error';
 import Vote from './pages/vote';
 import './App.css';
+import App from './pages/controlled';
+import Example from './pages/statecomp';
+import App from './pages/ref';
+import TextInputWithFocusButton from './pages/ref';
+import ActionButton from './pages/ref';*/
+import App from './components/BrowerRouter';
+
+
 
 /*class App extends React.Component {
 	render = () => <div id="but" >
@@ -51,7 +60,7 @@ export default Fun1;
 
 function Fun(){
   return(
-    <div>
+    <div>// Declare a new state variable, which we'll call "count"
       <Hello/>
     </div>
     <div>
@@ -89,7 +98,7 @@ class Passing extends Component{
     )
   }
 }
-export default Passing;*/
+export default Passing;*/ 
 
 function Fun(){
   return(
@@ -110,7 +119,7 @@ function Fun(){
     </div>*/
 
     <div>
-      <Vote/>
+      <App/>
       
     </div>
   )
