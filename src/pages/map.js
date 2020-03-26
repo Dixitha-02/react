@@ -9,7 +9,7 @@ const updatedNames = names.map((number)=>{
 }); 
 return(
     <ul>
-        {updatedNames}
+       <button onClick ={updatedNames}>1st</button>
     </ul>
 );
 }

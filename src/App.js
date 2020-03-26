@@ -12,7 +12,7 @@ import Function from './pages/func';
 import Bliss from './pages/state';
 import Props from './pages/Props';
 import Pass from './pages/passing';
-import Map from './pages/map';
+
 import Event from './pages/event';
 import Life from './pages/lifecycle';
 import Error from './pages/error_handling';
@@ -23,8 +23,20 @@ import App from './pages/controlled';
 import Example from './pages/statecomp';
 import App from './pages/ref';
 import TextInputWithFocusButton from './pages/ref';
-import ActionButton from './pages/ref';*/
+import ActionButton from './pages/ref';
 import App from './components/BrowerRouter';
+import Vote from './pages/vote';
+import './App.css';
+import Button from './pages/hooks';
+import ParamsExample from './components/params';
+import Nav from './components/links';
+import Counter from './pages/vote';
+import Map from './pages/map';
+import Vote from './pages/vote';
+import './App.css';*/
+import India from './pages/india';
+
+
 
 
 
@@ -119,7 +131,7 @@ function Fun(){
     </div>*/
 
     <div>
-      <App/>
+      <India/>
       
     </div>
   )

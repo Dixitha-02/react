@@ -1,30 +1,25 @@
 import React, {Component} from 'react';
-import img from 'React-image';
-class Vote extends Component{
-	constructor(props){
-		super(props);
-		this.state = {
-			countries: [
-				{name: "India", votes: 0},
-				{name: "Australia", votes: 0},
-				{name: "South Africa", votes: 0},
-				{name: "West Indies", votes: 0}
-			]
-		}
-    }
-    vote (i) {
-		let newCountries = [...this.state.countries];
-		newCountries[i].votes++;
-		function swap(array, i, j) {
-			var temp = array[i];
-			array[i] = array[j];
-			array[j] = temp;
-		}
-		this.setState({countries: newCountries});
-		
+export default class Counter extends React.Component {
+	constructor(props) {
+	  super(props);
+	  this.state = {
+		countries : [{name:"india",votes:0},
+					{name:"australia" , votes:0},
+				{name:"South Africa", votes:0},
+				{name:"WestIndies", votes:0},
+				{name:"Srilanka",votes:0}]
+				
+	 };
 	}
-	
-    render(){
+vote(i){
+	let newCountries =[...this.state.countries];
+	newCountries[i].votes++;
+	const newSortCountries = newCountries.sort((a,b)=> b.votes - a.votes);
+	this.setState({countries:newSortCountries});
+}
+
+  
+	render(){
 		return(
 			<>
 				<div className="heading">
@@ -36,21 +31,22 @@ class Vote extends Component{
 							<div key={i} className="country">
 								<div className="voteCount">
 									{count.votes}
+												  
 								</div>
 								<div className="countryName">
 									{count.name}
 								</div>
-
+	
 								<button onClick={this.vote.bind(this, i)}>Vote</button>
-								
+							
 							</div>
 						)
+						
 					}
+					
+						<button onClick={this.sort}>Rank</button>
 				</div>
 			</>
 		);
 	}
-}
-export default Vote;
-
-    
+	}
