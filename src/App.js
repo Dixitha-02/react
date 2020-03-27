@@ -32,9 +32,10 @@ import ParamsExample from './components/params';
 import Nav from './components/links';
 import Counter from './pages/vote';
 import Map from './pages/map';
+
+import India from './pages/india';*/
 import Vote from './pages/vote';
-import './App.css';*/
-import India from './pages/india';
+import './App.css';
 
 
 
@@ -131,7 +132,8 @@ function Fun(){
     </div>*/
 
     <div>
-      <India/>
+      <Vote/>
+    
       
     </div>
   )

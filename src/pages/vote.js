@@ -4,7 +4,7 @@ export default class Counter extends React.Component {
 	  super(props);
 	  this.state = {
 		countries : [{name:"india",votes:0},
-					{name:"australia" , votes:0},
+					{name:"australia", votes:0},
 				{name:"South Africa", votes:0},
 				{name:"WestIndies", votes:0},
 				{name:"Srilanka",votes:0}]
@@ -31,10 +31,13 @@ vote(i){
 							<div key={i} className="country">
 								<div className="voteCount">
 									{count.votes}
+									
 												  
 								</div>
 								<div className="countryName">
+								
 									{count.name}
+							
 								</div>
 	
 								<button onClick={this.vote.bind(this, i)}>Vote</button>
@@ -43,8 +46,6 @@ vote(i){
 						)
 						
 					}
-					
-						<button onClick={this.sort}>Rank</button>
 				</div>
 			</>
 		);

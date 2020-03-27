@@ -1,4 +1,5 @@
 import React, {component} from 'react';
+import india from '../images/india.png';
 
  class India extends React.Component{
     constructor(props){
@@ -15,6 +16,7 @@ import React, {component} from 'react';
     render(){
         return(
             <>
+            <img src={india} width='200'/>
             <button onClick={this.Counter}>Vote</button> INDIA - {this.state.count}
             </>
         )
